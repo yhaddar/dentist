@@ -1,0 +1,27 @@
+<%= form_with(model: form, class: "formval") do |form| %>
+  <main class="Form">
+      <div class="form">
+        <%= form.text_field :first_name, class: "input firstname", placeholder: "first name" %>
+      </div>
+      
+      <div class="form">
+        <%= form.text_field :last_name, class: "input lastname", placeholder: "last name" %>
+      </div>
+      
+      <div class="form">
+        <%= form.text_field :email, class: "input email", placeholder: "email" %>
+      </div>
+      
+      <div class="form">
+        <%= form.text_field :phone, class: "input phone", placeholder: "phone"  %>
+      </div>
+      
+      <div class="form">
+        <%= form.date_field :date_resirvation, class: "input date", placeholder: "date resirvation"  %>
+      </div>
+      
+      <button class="formbtn">
+        <%= form.submit :submit, class: "button" %>
+      </button>
+  </main>
+<% end %>

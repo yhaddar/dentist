@@ -1,0 +1,18 @@
+<p style="color: green" class="notice"><%= notice %></p>
+<div class="Forms">
+  <h1 class="forms">Forms</h1>
+
+    <div id="forms">
+      <% @forms.each do |form| %>
+        <%= render form %>
+        <button class="btn">
+          <%= link_to "Show this form", form, class: "btnNew" %>
+        </button>
+      <% end %>
+    </div>
+
+  <button type="" class="btn">
+      <%= link_to "New form", new_form_path, class: "btnNew" %>
+  </button>
+</div>
+

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Tajawal:wght@500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .back{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--clr-dark-blue);
+        bottom: 40px;
+        right: 19px;
+        cursor: pointer;
+        ion-icon{
+            color: var(--clr-white);
+            margin-left: 8px;
+            margin-top: 7px;
+            width: 35px;
+            height: 31px;
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        width: 20px;
+        background: none;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--clr-dark2-blue);
+        border-radius: 5px;
+    }
+
+}
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-dark-blue: hsl(240, 100%, 27%);
+    --clr-light-blue: hsl(197, 52%, 78%);
+    --clr-linear-gradient: linear-gradient(to right, #373b44, #4286f4);
+    --clr-dark2-blue: hsl(240deg 95% 24%);
+}
+$font-logo: 'Secular One', sans-serif;
+$font-primary: 'Tajawal', sans-serif;
+
+$shadow-primary:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+
+@mixin title {
+    font: {
+        size: 20px;
+        family: $font-primary;
+        style: italic;
+    }
+    color: var(--clr-dark-blue);
+    text-transform: capitalize;
+    @media screen and (min-width: 320px) and (max-width: 420px) {
+        font-size: 16px;
+    }
+}
+@mixin description {
+    font: {
+        size: 36px;
+        family: $font-primary;
+        style: italic;
+    }
+    color: var(--clr-black);
+    text-transform: capitalize;
+    margin-top: -18px;
+    @media screen and (min-width: 320px) and (max-width: 420px) {
+        font-size: 26px;
+    }
+}
+
+
+
+@import "./dentist/nav";
+@import "./dentist/header";
+@import "./dentist/form";
+@import "./dentist/home";
+@import "./dentist/form";
+@import "./dentist/services";
+@import "./dentist/_aboutUs";
+@import "./dentist/doctor";
+@import "./dentist/sectionBook";
+@import "./dentist/blogs";
+@import "./dentist/footer";
+

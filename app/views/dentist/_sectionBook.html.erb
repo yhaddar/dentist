@@ -1,0 +1,16 @@
+<section class="section_book">
+    <div class="book">
+        <div class="img_book">
+            <%= image_tag 'bg-home.png', class: "img"  %>
+        </div>
+        <div class="book_text">
+            <div class="text">
+                <h1 class="title"> book dentail appointment</h1>
+                <h1 class="description"> we are open and welcoming pationts</h1>
+            </div>
+            <div class="div_btn">
+                <%= link_to('book now', { :controller => 'forms', :active => 'index', :id => 1, :page => 'form reservation' }, class: 'btn') %>
+            </div>
+        </div>
+    </div>
+</section>

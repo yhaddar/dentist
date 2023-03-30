@@ -1,0 +1,16 @@
+<header class="header_dentist">
+    <div class="header">
+        <div class="header_logo">
+            <% logo = 'dentist' %>
+            <h1 class="logo"> <%= "#{logo}" %> </h1>
+        </div>
+        <ul class="ul_header">
+            <% nav = ["home", "services", "about us", "blog", "contact"] %>
+            <% nav.map do |n| %>
+                <li class="li_nav">
+                    <a href="#<%= "#{n}" %>" class="link_nav"><%= "#{n}" %></a>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</header>

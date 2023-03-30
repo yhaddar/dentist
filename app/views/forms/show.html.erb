@@ -1,0 +1,16 @@
+<p style="color: green" class="notice"><%= notice %></p>
+
+<div style="text-align: center">
+  <%= render @form %>
+
+  <div>
+    <button type="" class="button1">
+      <%= link_to "Edit this form", edit_form_path(@form), class: 'btn' %>
+    </button>
+    <button type="" class="button1">
+      <%= link_to "Back to forms", forms_path, class: 'btn' %>
+    </button>
+    <%= button_to "Destroy this form", @form, method: :delete, class: 'btn2' %>
+  </div>
+
+</div>

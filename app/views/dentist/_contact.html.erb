@@ -1,0 +1,73 @@
+<footer class="footer" id="contact">
+    <div class="contact_footer">
+        <div class="def">
+            <h1 class="logo">dentist</h1>
+            <h1 class="description_def">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. At, Magnam Debitis. Neque Ab Perferendis Dolore Veritatis Aut Voluptas Eius Laborum Totam.</h1>
+            <div class="open">
+                <div class="clock">
+                    <ion-icon name="time-outline" class="time"></ion-icon>
+                </div>
+                <div class="time_text">
+                    <h1>monday - friday:</h1>
+                    <h1>9:00 - 16:00</h1>
+                </div>
+            </div>
+        </div>
+        <div class="other_links">
+            <% links = ["home", "about us", "services", "project", "our team", "lastest blog"] %>
+            <h1 class="title_links">other links</h1>
+            <ul class="ul_link">
+                <% links.map do |link| %>
+                    <li class="li_link">
+                        <a href="#<%= link %>"><%= link %></a>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+        <div class="our_services">
+            <% links = ["root canal", "alignment teeth", "cosmetic teeth", "oral hyglene", "live advesory", "cavity inspection"] %>
+            <h1 class="title_services">our services</h1>
+            <ul class="ul_services">
+                <% links.map do |link| %>
+                    <li class="li_services">
+                        <a href="#"><%= link %></a>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+        <div class="contactUs">
+        <h1 class="title_service">contact us</h1>
+            <div class="Contact">
+                <% icon_contact= ["location-outline", "call-outline", "mail-outline"] %>
+                <% title = ["72 Liverpool St, New South Wales Sydney/Australia", "0567418925", "Info@exemple.com"] %>
+                <% icon_contact.each_index do |i| %>
+                    <div class="contact1">
+                        <div class="contact_icon">
+                            <ion-icon name="<%= icon_contact[i] %>"></ion-icon>
+                        </div>
+                        <div class="title_contact">
+                            <h1 class="title"><%= title[i] %></h1>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    <div class="footer_final">
+        <div class="flex_footer">
+            <div class="text_final">
+                <h1 class="title">©️2022 all right reserved by youssefhaddar</h1>
+            </div>
+            <% icon_social = ["logo-facebook", "logo-instagram", "logo-twitter"] %>
+            <div class="Social">
+                <% icon_social.map do |i| %>
+                    <a href="#">
+                        <div class="social">
+                            <ion-icon name="<%= i %>"></ion-icon>
+                        </div>
+                    </a>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</footer>

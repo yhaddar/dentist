@@ -1,0 +1,114 @@
+.section_doctor{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 75px;
+    .title_doctor{
+        text-align: center;
+        .title{
+            @include title;
+        }
+        .description{
+            @include description;
+        }
+    }
+    .doctors{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .doctor{
+            width: 16%;
+            height: 331px;
+            border-radius: 5px;
+            border: 1px solid var(--clr-light-blue);
+            padding-bottom: 10px;
+            &:hover{
+                border: 1px solid var(--clr-dark-blue);
+            }
+        }
+        .doctor_profile{
+            background: {
+                origin: border-box;
+                size: cover;
+                repeat: no-repeat;
+            }
+            width: 42%;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 26px;
+            border: 1px solid var(--clr-light-blue);
+            border-radius: 5px;
+        }
+        .name_doctor{
+            font: {
+                size: 20px;
+                family: $font-primary;
+                style: italic;
+                weight: bold;
+            }
+            color: var(--clr-black);
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 38px;
+        }
+        .contact_doctor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 49px;
+            .contact{
+                width: 34px;
+                height: 34px;
+                background: var(--clr-light-blue);
+                border-radius: 50%;
+                margin-left: 5px;
+                margin-right: 5px;
+                cursor: pointer;
+                &:active{
+                    transform: scale(0.98);
+                }
+                .icon{
+                    color: var(--clr-dark-blue);
+                    margin-left: 9px;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 674px) {
+    .section_doctor{
+        margin-top: 362px;
+        .doctors{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .doctor{
+                width: 94%;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 675px) and (max-width: 1138px){
+    .section_doctor{
+        margin-top: 300px;
+        .doctors{
+            display: flex;
+            flex-wrap: wrap;
+            .doctor{
+                width: 46%;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.section_aboutUs{
+    width: 100%;
+    height: 500px;
+    padding-bottom: 50px;
+    .div_aboutUs{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        .div_image{
+            width: 50%;
+            height: auto;
+            .div_i{
+                width: 55%;
+                height: 372px;
+                float: right;
+                margin-top: 50px;
+                border-top-left-radius : 150px 100px;
+                border-bottom-right-radius : 150px 100px;
+                margin-right: 10px;
+                background: {
+                    origin: border-box;
+                    size: cover;
+                    repeat: no-repeat;
+                }
+                border: 3px solid var(--clr-dark-blue);
+            }
+        }
+        .div_text{
+            width: 50%;
+            height: auto;
+            .title{
+                margin-top: 43px;
+                margin-left: 20px;
+                .title1{
+                    @include title;
+                }
+                .description{
+                    @include description;
+                    font-size: 26px;
+                    margin-top: -4px;
+                }
+                .paragraphe{
+                    width: 57%;
+                    .p1{
+                        font: {
+                            family: $font-primary;
+                            size: 12px;
+                            style: italic;
+                        }
+                        color: var(--clr-black)
+                    }
+                    .p2{
+                        @extend .p1;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 722px) {
+    .section_aboutUs{
+        .div_aboutUs{
+            display: flex;
+            flex-direction: column;
+            .div_image{
+                width: 100%;
+                .div_i{
+                    width: 94%;
+                }
+            }
+            .div_text{
+                width: 100%;
+                .title{
+                    .description{
+                        font-size: 24px;
+                    }
+                    .paragraphe{
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 723px) and (max-width: 1138px){
+    .section_aboutUs{
+        .div_aboutUs{
+            .div_image{
+                .div_i{
+                    width: 83%;
+                }
+            }
+            .div_text{
+                .title{
+                    .paragraphe{
+                        width: 86%;
+                    }
+                }
+            }
+        }
+    }
+}

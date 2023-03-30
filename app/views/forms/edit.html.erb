@@ -1,0 +1,17 @@
+
+<div  style="text-align: center">
+  <h1 class="forms">Editing form</h1>
+  
+  <%= render "form", form: @form %>
+  
+  <br>
+  
+  <div>
+    <button type="" class="button1">
+      <%= link_to "Show this form", @form, class: 'btn' %>
+    </button>  
+    <button type="" class="button1">
+        <%= link_to "Back to forms", forms_path, class: 'btn' %>
+    </button>
+  </div> 
+</div>

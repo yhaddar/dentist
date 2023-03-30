@@ -1,0 +1,96 @@
+.nav_header{
+    width: 100%;
+    height: 35px;
+    background: var(--clr-dark-blue);
+    position: fixed;
+    .div_nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .nav_contact{
+            display: flex;
+            margin-top: 15px;
+            .nav_email{
+                margin-top: -29px;
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+                .email_icon{
+                    .icon_email{
+                        width: 28px;
+                        height: 16px;
+                        color: var(--clr-light-blue);
+                    }
+                }
+                .email_text{
+                    .email{
+                        font: {
+                            size: 11px;
+                            family: $font-primary;
+                            style: normal;
+                            weight: bold;
+                        }
+                        color: var(--clr-white);
+                    }
+                }
+            }
+            .nav_number{
+                @extend .nav_email;
+                .number_icon{
+                    .icon_number{
+                        width: 28px;
+                        height: 16px;
+                        color: var(--clr-light-blue);
+                    }
+                }
+                .number_text{
+                    .number{
+                        font: {
+                            size: 11px;
+                            family: $font-primary;
+                            style: normal;
+                            weight: bold;
+                        }
+                        color: var(--clr-white);
+                    }
+                }
+            }
+        }
+        .div_media{
+            margin-top: -10px;
+            .ul_media{
+                .li_media{
+                    display: inline-block;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    .icon_media{
+                        width: 15px;
+                        height: 21px;
+                        color: var(--clr-white);
+                        cursor: pointer;
+                        &:hover {
+                            color: var(--clr-light-blue);
+                        }
+                        &:active {
+                            transform: scale(0.98);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .nav_header{
+        .div_nav{
+            .nav_contact{
+                display: flex;
+                margin-top: 27px;
+            }
+            .div_media{
+                display: none;
+            }
+        }
+    }
+}

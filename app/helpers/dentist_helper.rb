@@ -1,0 +1,2 @@
+module DentistHelper
+end

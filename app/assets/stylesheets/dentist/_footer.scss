@@ -1,0 +1,227 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background: var(--clr-dark-blue);
+    .contact_footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .def{
+            width: 25%;
+            .logo{
+                font: {
+                    size: 31px;
+                    style: normal;
+                    family: $font-logo;
+                }
+                color: var(--clr-white);
+            }
+            .description_def{
+                font: {
+                    size: 16px;
+                    family: $font-primary;
+                    style: italic;
+                    weight: 100;
+                }
+                color: var(--clr-light-blue);
+                text-transform: capitalize;
+            }
+            .open{
+                display: flex;
+                flex-wrap: wrap;
+                .clock{
+                    width: 50px;
+                    height: 50px;
+                    background: var(--clr-light-blue);
+                    border-radius: 50%;
+                    .time{
+                        color: var(--clr-dark-blue);
+                        width: 36px;
+                        height: 29px;
+                        margin-left: 8px;
+                        margin-top: 10px;
+                    }
+                }
+                .time_text{
+                    margin-top: -10px;
+                    h1{
+                        font: {
+                            size: 16px;
+                            family: $font-primary
+                        }
+                        color: var(--clr-light-blue);
+                        margin-bottom: -9px;
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+        .other_links{
+            .title_links{
+                font: {
+                    size: 30px;
+                    style: normal;
+                    family: $font-primary
+                }
+                color: var(--clr-white);
+                text-transform: capitalize;
+            }
+            .ul_link{
+                .li_link{
+                    &::marker{
+                        color: var(--clr-light-blue);
+                    }
+                    a{
+                        color: var(--clr-light-blue);
+                        text-decoration: none;
+                        font: {
+                            size: 18px;
+                            family: $font-primary;
+                        }
+                        text-transform: capitalize;
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color: var(--clr-white);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .our_services{
+            .title_services{
+                font: {
+                    size: 30px;
+                    style: normal;
+                    family: $font-primary
+                }
+                color: var(--clr-white);
+                text-transform: capitalize;
+            }
+            .ul_services{
+                .li_services{
+                    &::marker{
+                        color: var(--clr-light-blue);
+                    }
+                    a{
+                        color: var(--clr-light-blue);
+                        text-decoration: none;
+                        font: {
+                            size: 18px;
+                            family: $font-primary;
+                        }
+                        text-transform: capitalize;
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color: var(--clr-white);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .contactUs{
+            .title_service{
+                font: {
+                    size: 30px;
+                    style: normal;
+                    family: $font-primary
+                }
+                color: var(--clr-white);
+                text-transform: capitalize;
+                transition: 0.3s ease-in-out;
+            }
+            .Contact{
+                .contact1{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    .contact_icon{
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        background: var(--clr-light-blue);
+                        ion-icon{
+                            width: 20px;
+                            height: 20px;
+                            color: var(--clr-dark-blue);
+                            margin-left: 8px;
+                            margin-top: 6px;
+                        }
+                    }
+                    .title_contact{
+                        margin-top: -9px;
+                        margin-left: 10px;
+                        .title{
+                            font: {
+                                size: 18px;
+                                style: normal;
+                                family: $font-primary;
+                            }
+                            color: var(--clr-light-blue);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_final{
+        width: 100%;
+        height: auto;
+        background: var(--clr-dark2-blue);
+        box-shadow: $shadow-primary;
+        .flex_footer{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-top: 11px;
+            .text_final{
+                .title{
+                    font: {
+                        size: 15px;
+                        family: $font-primary;
+                    }
+                    color: var(--clr-white);
+                    text-transform: capitalize;
+                }
+            }
+            .Social{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 10px;
+                margin-right: 10px;
+                .social{
+                    background: var(--clr-light-blue);
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    ion-icon{
+                        color: var(--clr-dark-blue);
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 8px;
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .footer{
+        .contact_footer{
+            flex-direction: column;
+            margin-left: 20px;
+            .def{
+                width: 83%;
+            }
+        }
+    }
+}

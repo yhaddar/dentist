@@ -1,0 +1,47 @@
+<section class="Service" id="services">
+    <div class="title_services">
+        <h1 class="title_service"> our services </h1>
+        <h1 class="description_service">what we provide</h1>
+    </div>
+    <% image1 = ["1.png", "2.png", "3.png"] %> 
+    <% title1 = ["root canal", "cosmetic teeth", "live advisory", "alignment teeth", "oral hygien", "cavity inspection"] %>
+    <% description1 = ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatem consectetur deserunt non quasi necessitatibus.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatem consectetur deserunt non quasi necessitatibus.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatem consectetur deserunt non quasi necessitatibus."] %> 
+    
+    <% image2 = ["4.png", "5.png", "6.png"] %> 
+    <% title2 = ["alignment teeth", "oral hygien", "cavity inspection"] %>
+    <% description2 = ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatem consectetur deserunt non quasi necessitatibus.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatem consectetur deserunt non quasi necessitatibus.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatem consectetur deserunt non quasi necessitatibus."] %> 
+    
+    <div class="container_grid">
+        <div class="container1">
+            <% image1.each_index do |i| %>
+                <div class="div_grid">
+                    <div class="image_div">
+                        <%= image_tag image1[i], class: "image1" %>
+                    </div>
+                    <div class="text">
+                        <h1 class="text_grid"> <%= title1[i] %> </h1>
+                        <h1 class="description_grid"> <%= description1[i] %> </h1>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+        <div class="image_center" >
+            <%= image_tag('bg-services.png', class: "image2") %>
+        </div>
+        <div class="container1">
+            <% image2.each_index do |i| %>
+                <div class="div_grid">
+                    <div class="image_div">
+                        <%= image_tag image2[i], class: "image1" %>
+                    </div>
+                    <div class="text">
+                        <h1 class="text_grid"> <%= title2[i] %> </h1>
+                        <h1 class="description_grid"> <%= description2[i] %> </h1>
+                    </div>
+                </div>
+            <% end %>
+        </div> 
+    </div>
+</section>
+
+

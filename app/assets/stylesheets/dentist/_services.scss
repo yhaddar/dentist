@@ -1,0 +1,148 @@
+.Service{
+    width: 100%;
+    height: auto;
+    margin-top: 37px;
+    .title_services{
+        text-align: center;
+        .title_service{
+            @include title;
+        }
+        .description_service{
+            @include description;
+        }
+    }
+    .container_grid{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 149px;
+        .container1{
+            height: 183px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .div_grid{
+                display: flex;
+                width: 49%;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                border-radius: 5px;
+                border: 1px solid var(--clr-light-blue);
+                padding-bottom: 10px;
+                padding-left: 10px;
+                &:hover{
+                    border: 1px solid var(--clr-dark-blue);
+                }
+                .image_div{
+                    width: 100px;
+                    height: auto;
+                    .image1{
+                        width: 68px;
+                        height: 56px;
+                        margin-top: 60px;
+                    }
+                }
+                .text{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    .text_grid{
+                        font: {
+                            size: 20px;
+                            family: $font-primary;
+                        }
+                        color: var(--clr-black);
+                        text-transform: capitalize;
+                    }
+                    .description_grid{
+                        font: {
+                            size: 13px;
+                            family: $font-primary;
+                            style: italic;
+                            weight: 100;
+                        }
+                        color: var(--clr-black);
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .image_center{
+            margin-top: 18px;
+            .image2{
+                width: 460px;
+                height: auto;
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 320px) and (max-width: 986px) {
+    .Service{
+        .title_services{
+            text-align: center;
+            .title_service{
+                @include title;
+            }
+            .description_service{
+                @include description;
+            }
+        }
+        .container_grid{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .container1{
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .div_grid{
+                    width: 82%;;
+                }
+            }
+            .image_center{
+                margin-top: 0px;
+                .image2{
+                    width: 329px;
+                    height: auto;
+                }
+            }
+        } 
+    }
+}
+
+@media screen and (min-width: 987px) and (max-width: 1674px) {
+    .Service{
+        .title_services{
+            text-align: center;
+            .title_service{
+                @include title;
+            }
+            .description_service{
+                @include description;
+            }
+        }
+        .container_grid{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .container1{
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .div_grid{
+                    width: 82%;;
+                }
+            }
+            .image_center{
+                margin-top: 0px;
+                .image2{
+                    width: 329px;
+                    height: auto;
+                }
+            }
+        } 
+    }
+}

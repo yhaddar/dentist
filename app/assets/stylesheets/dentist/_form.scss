@@ -1,0 +1,161 @@
+.Forms{
+    text-align: center;
+    width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    // border: 1px solid var(--clr-dark2-blue);
+    .forms{
+        font: {
+            size: 38px;
+            style: italic;
+            family: $font_primary
+        }
+    }
+    .btn{
+        width: 151px;
+        height: 41px;
+        background: var(--clr-dark-blue);
+        border-radius: 5px;
+        margin-bottom: 8px;
+        margin-top: 7px;
+        border: none;
+        outline: none;
+        &:active{
+            transform: scale(0.98);
+        }
+        .btnNew{
+            color: var(--clr-white);
+            text-decoration: none;
+            
+            font: {
+                size: 16px;
+                style: italic;
+                family: $font_primary;
+            }
+        }
+    }
+}
+.forms_new{
+    text-align: center;
+    h1{
+        font: {
+            size: 38px;
+            style: italic;
+            family: $font_primary
+        }
+    }
+    .btnBack{
+        color: var(--clr-white);
+        text-decoration: none;
+        font: {
+            size: 16px;
+            style: italic;
+            family: $font_primary;
+        }
+    }
+}
+
+.Form{
+    .input{
+        width: 270px;
+        height: 41px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid var(--clr-dark-blue);
+        text-transform: uppercase;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            text-transform: capitalize;
+        }
+    }
+    .formbtn{
+        width: 151px;
+        height: 41px;
+        background: var(--clr-dark-blue);
+        border-radius: 5px;
+        margin-bottom: 8px;
+        margin-top: 7px;
+        border: none;
+        outline: none;
+        &:active{
+            transform: scale(0.98);
+        }
+        .button{
+            color: var(--clr-white);
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font: {
+                size: 16px;
+                style: italic;
+                family: $font_primary;
+            }
+        }
+    }
+}
+.button1{
+    width: 151px;
+    height: 41px;
+    background: var(--clr-dark-blue);
+    border-radius: 5px;
+    margin-bottom: 8px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    &:active{
+        transform: scale(0.98);
+    }
+    .btn{
+        color: var(--clr-white);
+        text-decoration: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font: {
+            size: 16px;
+            style: italic;
+            family: $font_primary;
+        }
+    }
+}
+.btn2{
+        width: 151px;
+        height: 41px;
+        background: var(--clr-dark-blue);
+        border-radius: 5px;
+        margin-bottom: 8px;
+        margin-top: 7px;
+        color: var(--clr-white);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font: {
+            size: 16px;
+            style: italic;
+            family: $font_primary;
+        }
+}
+
+.forms{
+    font: {
+        size: 38px;
+        style: italic;
+        family: $font_primary
+    }
+}
+
+.notice{
+    text-align: center;
+    font: {
+        size: 16px;
+        style: italic;
+        family: $font_primary;
+    }
+}

@@ -1,0 +1,21 @@
+<section class="home_section" id="home">
+    <div class="container">
+        <aside class="aside_home1">
+            <div class="div_home1">
+                <div class="div_text">
+                    <h1 class="text_home">welcome to <span class="span_text"></span></h1>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti unde dolor eum! Facere tempore officiis, pariatur totam laboriosam dicta minus dignissimos sed quasi neque autem vero inventore natus. Quas, veritatis.</p>
+                </div>
+                <div class="div_btn">
+                    <%= link_to('book now', { :controller => 'forms', :active => 'index', :id => 1, :page => 'form reservation' }, class: 'btn') %>
+                </div>
+            </div>
+        </aside>
+        <aside class="aside_home2">
+            <div class="div_home2">
+                <%= image_tag('bg-home.png', class: 'img') %>
+            </div>
+        </aside>
+    </div>
+</section>
+

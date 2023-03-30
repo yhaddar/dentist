@@ -1,0 +1,20 @@
+<section class="blogs" id="blog">
+    <div class="blogs_text">
+        <h1 class="title">our blogs</h1>
+        <h1 class="description">lastest blogs & new</h1>
+    </div>
+    <div class="blogs_news">
+        <% image_news = ["8.jpg", "8.jpg", "8.jpg"] %>
+        <% title_news = ["dras acumsan nulla nec lacus ultricies placerat", "dras acumsan nulla nec lacus ultricies placerat", "dras acumsan nulla nec lacus ultricies placerat"] %>
+        <% description_news = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magnam debitis. Neque ab perferendis dolore veritatis aut voluptas eius laborum totam.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magnam debitis. Neque ab perferendis dolore veritatis aut voluptas eius laborum totam.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, magnam debitis. Neque ab perferendis dolore veritatis aut voluptas eius laborum totam."] %>
+        <% image_news.each_index do |i| %>
+            <div class="news">
+                <div class="image_news" style="background-image: url(<%= asset_path "#{image_news[i]}" %>)"></div>
+                <div class="text-news">
+                    <h1 class="title_news"><%= title_news[i] %></h1>
+                    <h1 class="description_news"> <%= description_news[i] %> </h1>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</section>

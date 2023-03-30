@@ -1,0 +1,215 @@
+.home_section{
+    width: 100%;
+    height: auto;
+    background: var(--clr-white);
+    overflow-y: hidden;
+    padding-top: 75px;
+    .container{
+        display: flex;
+        .aside_home1{
+            width: 50%;
+            height: 854px;
+            .div_home1{
+                margin-left: 30%;
+                margin-top: 32%;
+                .div_text{
+                    .text_home{
+                        font: {
+                            size: 39px;
+                            family: $font-primary;
+                        }
+                        color: var(--clr-dark-blue);
+                        text-transform: capitalize;
+                        .typed-cursor{
+                            border-radius: 5px;
+                        }
+                    }
+                    .description{
+                        font: {
+                            size: 16px;
+                            family: $font-primary;
+                            style: italic;
+                        }
+                        color: var(--clr-black);
+                        width: 94%;
+                        margin-top: -32px;
+                        margin-left: 20px;
+                    }
+                }
+                .div_btn{
+                    width: 96px;
+                    height: 33px;
+                    background: var(--clr-dark-blue);
+                    padding-top: 7px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 1s ease-in-out;
+                    &:active{
+                        transform: scale(0.98);
+                    }
+                    .btn{
+                        text-decoration: none;
+                        color: var(--clr-white);
+                        margin-left: 9px;
+                        font: {
+                            size: 18px;
+                            family: $font-primary;
+                            style: italic;
+                            weight: bold;                    
+                        }
+                    }
+                }
+            }
+        }
+        .aside_home2{
+            @extend .aside_home1;
+            float: right;
+            .div_home2{
+                width: 500px;
+                height: auto;
+                margin-top: 84px;
+                .img{
+                    width: 566px;
+                    height: 657px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .home_section{
+        .container{
+            flex-direction: column;
+            .aside_home1{
+                width: 100%;
+                height: auto;
+                .div_home1{
+                    margin-left: 5%;
+                    margin-top: 8%;
+                    .div_text{
+                        .text_home{
+                            font: {
+                                size: 17px;
+                            }
+                        }
+                        .description{
+                            font: {
+                                size: 11px;
+                            }
+                            margin-top: 3px;
+                        }
+                    }
+                    .div_btn{
+                        width: 73px;
+                        height: 29px;
+                        .btn{
+                            font: {
+                                size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            .aside_home2{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 421px) and (max-width: 740px){
+    .home_section{
+        .container{
+            flex-direction: column;
+            .aside_home1{
+                width: 100%;
+                height: auto;
+                .div_home1{
+                    margin-left: 5%;
+                    margin-top: 8%;
+                    .div_text{
+                        .text_home{
+                            font: {
+                                size: 24px;
+                            }
+                        }
+                        .description{
+                            font: {
+                                size: 13px;
+                            }
+                            margin-top: 3px;
+                        }
+                    }
+                    .div_btn{
+                        width: 73px;
+                        height: 29px;
+                        .btn{
+                            font: {
+                                size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            .aside_home2{
+                .div_home2{
+                    margin-top: 0;
+                    width: 0;
+                    .img{
+                        width: 447px;
+                        height: 547px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 741px) and (max-width: 1062px) {
+    .home_section{
+        .container{
+            flex-direction: column;
+            .aside_home1{
+                width: 100%;
+                height: auto;
+                .div_home1{
+                    margin-left: 5%;
+                    margin-top: 8%;
+                    .div_text{
+                        .text_home{
+                            font: {
+                                size: 24px;
+                            }
+                        }
+                        .description{
+                            font: {
+                                size: 16px;
+                            }
+                            width: 48%;
+                            margin-top: 3px;
+                        }
+                    }
+                    .div_btn{
+                        width: 73px;
+                        height: 29px;
+                        .btn{
+                            font: {
+                                size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            .aside_home2{
+                .div_home2{
+                    margin-top: 0;
+                    width: 0;
+                    .img{
+                        width: 447px;
+                        height: 547px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<nav class="nav_header">
+    <div class="div_nav">
+        <div class="nav_contact">
+            <div class="nav_email">
+                <div class="email_icon">
+                    <% icon_email = "mail-outline" %>
+                    <ion-icon name=<%= "#{icon_email}" %> class="icon_email" ></ion-icon>
+                </div>
+                <div class="email_text">
+                <% email = "Info@exemple.com" %>
+                    <h1 class="email"> <%= "#{email}" %> </h1>
+                </div>
+            </div>
+            <div class="nav_number">
+                <div class="number_icon">
+                    <% icon_number = "call-outline" %>
+                    <ion-icon name=<%= "#{icon_number}" %> class="icon_number" ></ion-icon>
+                </div>
+                <div class="number_text">
+                <% number = "0567418925" %>
+                    <h1 class="number"> <%= "#{number}" %> </h1>
+                </div>
+            </div>
+        </div>
+        <div class="div_media">
+            <ul class="ul_media">
+                <% media = ["logo-facebook", "logo-instagram", "logo-twitter" , "logo-youtube"] %>
+                <% media.map do |m| %>
+                    <li class="li_media">
+                        <ion-icon name="<%= "#{m}" %>" class="icon_media"></ion-icon>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</nav>

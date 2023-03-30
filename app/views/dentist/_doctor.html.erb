@@ -1,0 +1,29 @@
+<section class="section_doctor">
+    <div class="title_doctor">
+        <h1 class="title">our doctor</h1>
+        <h1 class="description">best expert dentist</h1>
+    </div>
+    <div class="doctors">
+        
+        <% profile = ["7.jpg", "7.jpg", "7.jpg", "7.jpg"] %>
+        <% name = ["howard holmes", "ella tempson", "vincent cooper", "daniel bryant"] %>
+       
+
+        <% profile.each_index do |i| %>
+            <div class="doctor">
+                <div class="doctor_profile" style="background-image: url(<%= asset_path "#{profile[i]}" %>);"></div> 
+                <h1 class="name_doctor"> <%= name[i] %> </h1>
+                <div class="contact_doctor">
+                <% icon = ["logo-facebook", "logo-instagram", "logo-twitter"] %>
+                    <% icon.each do |icon| %>
+                        <div class="contact">
+                        <a href="#">
+                            <ion-icon name=<%= "#{icon}" %> class="icon" ></ion-icon> 
+                        </a>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</section>
